@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Adoption List</title>
+   <link rel="stylesheet" href="style.css" />
+    <script type="module"  src="main.js"></script>
+</head>
+<body>
+    <div class="hero">
+        <h1>Welcome</h1>
+        <h2>Our friends need a home</h2>
+    </div>
+    <div class="filter-nav">
+        <a href="#" data-filter="all">All Animals</a>
+        <a href="#" data-filter="dog"><span class="only-large-screen">Only </span>Dogs</a>
+        <a href="#" data-filter="cat"><span class="only-large-screen">Only </span>Cats</a>
+        <a href="#" data-filter="rabbit"><span class="only-large-screen">Only </span>Rabbits</a>
+    </div>
+
+    <div class="animals">
+        <div class="loading">Loading our furry friends...</div>
+    </div>
+    <template id="animal-card">
+        <div class="animal-card">
+            <div class="animal-card-text">
+                <h3></h3>
+                <small><span class="age"></span> - <span class="species"></span></small>
+                <p class="description"></p>
+                <a href="#" class="primary-btn">Adopt <span class="name"></span></a>
+            </div>
+            <div class="animal-photo">
+                <img src="" alt="">
+            </div>
+        </div>
+    </template>
+</body>
+</html>
